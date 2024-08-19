@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Bau.Libraries.LibHelper" Version="1.1.33" />
     <PackageReference Include="Bau.Libraries.LibMarkup" Version="1.1.4" />
+    <PackageReference Include="Bau.Libraries.OneTimePassword" Version="1.0.17" />
     <PackageReference Include="BauMvvm.ViewModels" Version="1.0.0" />
   </ItemGroup>
 
