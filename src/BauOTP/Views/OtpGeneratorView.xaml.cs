@@ -28,6 +28,7 @@ public partial class OtpGeneratorView : Window
 		Clipboard.SetText(code);
 	}
 
+
 	/// <summary>
 	///		ViewModel
 	/// </summary>
