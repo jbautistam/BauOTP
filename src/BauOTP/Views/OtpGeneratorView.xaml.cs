@@ -21,7 +21,25 @@ public partial class OtpGeneratorView : Window
 	}
 
 	/// <summary>
+	///		Copia un código en el portapapeles
+	/// </summary>
+	private void CopyToClipboard(string code)
+	{
+		Clipboard.SetText(code);
+	}
+
+	/// <summary>
 	///		ViewModel
 	/// </summary>
 	public GeneratorViewModel ViewModel { get; }
+
+	private void cmdCopyHotp_Click(object sender, RoutedEventArgs e)
+	{
+		CopyToClipboard(ViewModel.HotpCode);
+    }
+
+	private void cmdCopyTotp_Click(object sender, RoutedEventArgs e)
+	{
+		CopyToClipboard(ViewModel.TotpCode);
+    }
 }

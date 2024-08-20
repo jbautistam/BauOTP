@@ -27,20 +27,16 @@
 				</Button>
 			</ToolBar>
 		</ToolBarTray>
-		<ListView Grid.Row="1" Grid.Column="0" Margin="5" ItemsSource="{Binding Path=OtpListViewModel.Items}" SelectedItem="{Binding Path=OtpListViewModel.SelectedItem}">
-			<ListView.View>
-				<GridView>
-					<GridViewColumn Width="500" Header="Application">
-						<GridViewColumn.CellTemplate>
-							<DataTemplate>
-								<TextBlock Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" 
-									FontSize="18"
-									Text="{Binding Path=Text}" />
-							</DataTemplate>
-						</GridViewColumn.CellTemplate>
-					</GridViewColumn>
-				</GridView>
-			</ListView.View>
-		</ListView>
+
+		<ListBox Grid.Row="1" Grid.Column="0" ItemsSource="{Binding Path=OtpListViewModel.Items}" SelectedItem="{Binding Path=OtpListViewModel.SelectedItem}"
+			MouseDoubleClick="lstAccounts_MouseDoubleClick">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<TextBlock Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" 
+						FontSize="18"
+						Text="{Binding Path=Text}" />
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
 	</Grid>
 </Window>

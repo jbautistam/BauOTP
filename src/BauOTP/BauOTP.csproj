@@ -11,12 +11,14 @@
 
   <ItemGroup>
     <None Remove="Resources\Accept.png" />
+    <None Remove="Resources\Copy.png" />
     <None Remove="Resources\Delete.png" />
     <None Remove="Resources\Search.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Resources\Accept.png" />
+    <Resource Include="Resources\Copy.png" />
     <Resource Include="Resources\Delete.png" />
     <Resource Include="Resources\Search.png" />
   </ItemGroup>

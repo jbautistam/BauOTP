@@ -33,6 +33,11 @@ public partial class MainWindow : Window
 		InitWindow();
 	}
 
+	private void lstAccounts_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+	{
+		MainViewModel.OpenCommand.Execute(null);
+    }
+
 	/// <summary>
 	///		Manager de ViewModels de la aplicación de ejemplo
 	/// </summary>
